@@ -1,0 +1,17 @@
+CRC32Fix-SETTINGS.py
+--------------------------------------
+Checksum covers the UNOSetting.sav
+Algorithm: CRC32 (Classic polynomial)
+Checksum-Byte's length: 4 bytes long
+Data Chunks/Blocks: 0x0-0x2613
+Big-Endian
+
+
+
+CRC32Fix-MATCH.py
+--------------------------------------
+Checksum covers the UNOMatch.sav
+Algorithm: CRC32 (Classic polynomial)
+Checksum-Byte's length: 4 bytes long
+Data Chunks/Blocks: 0x0-0xFF9A
+Big-Endian

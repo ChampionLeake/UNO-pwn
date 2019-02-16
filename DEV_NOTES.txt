@@ -1,0 +1,20 @@
+"UNO" USA/EUR/JPN(DSiWare) DEV-NOTES!!!
+--This is a collaboration of me and zoogie's notes
+
+
+Vulnerability: String-buffer overflow via player name
+UNO has ASCII player-name for each of the 5 profile save. The game crashed with an excessively large player name which overwritten some stack registers including the PC(Point Counter).
+
+Shellcode JUMPADR
+USA 0x001ED2D0 + 0x02000000 = 0x021ED2D0 (30 97 1E 02) [Shellcode placed: 0x260]
+EUR 0x001EA138 + 0x02000000 = 0x021EA138 (38 A1 1E 02) [Shellcode placed: 0x260]
+JPN 0x001ED2D0 + 0x02000000 = 0x021ED2D0 (D0 D2 1E 02) [Shellcode placed: 0x260]
+
+- "loader.c" purpose is to load bootcode into WRAM
+- minitwlpayload(bootcode) is pasted at UNOMatch.sav file offset 0xC800 (USA/JPN only)
+	* minitwlpayload is split within the UNOSetting.sav file for EUR
+
+WRAM offset(s)
+USA 0x003D07A0 + 0x02000000 = 0x023D07A0
+EUR 0x003C2D58 + 0x02000000 = 0x023C2D58 (stride splits in chunks for UNOSetting.sav)
+JPN 0x003D4320 + 0x02000000 = 0x023D4320
