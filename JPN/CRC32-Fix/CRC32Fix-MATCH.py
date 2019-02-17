@@ -10,7 +10,7 @@ import os
 import zlib
 
 for i in glob.iglob('../build/UNOMatch.sav', recursive=True):
-    if os.path.getsize(i) == 0xFF9F:	#size of the overall UNOSetting.sav file
+    if os.path.getsize(i) == 0xFF9F:	#size of the overall UNOMatch.sav file
         with open(i, 'rb+') as f:
             data = f.read(0xFF9B)	#reads the offset of the CRC-bytes
             if data[0x2DC0:0x2DC7] == b'\xfc\x1d\x02\x3c\xfc\x1d\x02':	#sanity-check for a specific string to be found in the save (specifically offset 0x160) ; string is 8 bytes long
