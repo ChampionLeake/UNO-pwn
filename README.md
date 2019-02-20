@@ -50,7 +50,7 @@ __NOTE:__ This will overwrite your savedata and will make some areas of the game
 * [ihaveamac](https://github.com/ihaveamac): CRC32 Python Scripts
 * [nocash](https://problemkaputt.de/gba.htm): Suggestions for improving the SDLoader, creating no$gba for debugging (WHICH HELPED A LOT)
 * [Normmatt](https://github.com/Normmatt): Helping me fix the masterbright settings for the PoC splash payload
-* [fincs](https://github.com/finc): Giving very helpful advice about RAM allocating
+* [fincs](https://github.com/fincs): Giving very helpful advice about RAM allocating
 * [WinterMute](https://github.com/WinterMute): bootloader(minitwlpayload), NDS-HB-Menu, DEVKITPRO, porting UNO*pwn to his DSiWareHax installer
 * [yellows8](https://github.com/yellows8): the inspiration that got me to doing stuff for the DSi.
 * All of the thankful and helpful testers :D
