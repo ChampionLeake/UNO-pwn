@@ -2,7 +2,7 @@
 .section .init
 
 /* bootcode is pasted in this file at offset 0xC800 */
-/* This was the payload dest to the WRAM offset 0x023D07A0 at bootime. */
+/* This was the payload dest to the WRAM offset 0x023D4320 at bootime. */
 /* Our loader.bin helps point to the bootcoode here */
 
 _start:
