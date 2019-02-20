@@ -46,12 +46,12 @@ __NOTE:__ This will overwrite your savedata and will make some areas of the game
 ## Special thanks to:
 * [zoogie](https://github.com/zoogie): WRAM Loader code, EUR UNO*pwn port, assisting me throughout the exploitation
 * [stuckpixel](https://github.com/pixel-stuck): Concept and code of the SDLoader, assisting me throughout the exploitation, assisting me realted to memory dumps, encouraging me not to quit, and basically teaching me a lot of things I put into practice today :D
+* [WinterMute](https://github.com/WinterMute): bootloader(minitwlpayload), NDS-HB-Menu, DEVKITPRO, porting UNO*pwn to his DSiWareHax installer(HUGE THANKS FOR THAT :D)
 * [shutterbug2000](https://github.com/shutterbug2000): Assisting me realted to memory dumps
 * [ihaveamac](https://github.com/ihaveamac): CRC32 Python Scripts
 * [nocash](https://problemkaputt.de/gba.htm): Suggestions for improving the SDLoader, creating no$gba for debugging (WHICH HELPED A LOT)
 * [Normmatt](https://github.com/Normmatt): Helping me fix the masterbright settings for the PoC splash payload
 * [fincs](https://github.com/fincs): Giving very helpful advice about RAM allocating
-* [WinterMute](https://github.com/WinterMute): bootloader(minitwlpayload), NDS-HB-Menu, DEVKITPRO, porting UNO*pwn to his DSiWareHax installer
 * [yellows8](https://github.com/yellows8): the inspiration that got me to doing stuff for the DSi.
 * All of the thankful and helpful testers :D
 ###
