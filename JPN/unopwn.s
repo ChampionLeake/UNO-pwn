@@ -9,12 +9,13 @@ _start:
 @ Fills the profile name with the value 0x20; counted as the initial string-buffer-overflow for the profile name.
 .fill 0x30, 1, 0x20
 
-.word JUMPADR
+.word JUMPADR @ Jumps to a WRAM offset where the payload will run code from RAM 
 .space (_start + 0x260) - .
 
 .align 2
 .incbin "./assets/loader.bin" @ initial used to jump to a section of WRAM to boot the minitwlpayload from another savefile (UNOMatch.sav). Notes can be found in "zoogie_notes.txt".
 
+/* rest of the save is just profile garbage (Holding information like the avatars, records, etc.) */
 .org 0x39C
 .byte 0x01
 
