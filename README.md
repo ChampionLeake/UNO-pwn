@@ -13,7 +13,7 @@ UNO*pwn is a DSiWare savegame exploit for the game, UNO. The exploit will allow 
 
 ## Installing UNO*pwn:
 __NOTE:__ This will overwrite your current savedata and will make some areas of the game inoperable. Please backup your savedata (if possible) before installing the exploit.
-* Download the [DSiWareHax archive]() and place all of the contents onto the root of your SD card.
+* Download [WinterMute's](https://github.com/WinterMute) updated [DSiWareHax archive]() and place all of the contents onto the root of your SD card.
 * Use an exisiting DSiWare exploit to launch into the nds-hbmenu, and navigate to where the `DSiWareHax.nds` application is stored.
 * If all things went well, the application should install all of the existing DSiWare exploits onto your NAND and should install the UNO*pwn exploit as well.
 
@@ -46,10 +46,10 @@ __NOTE:__ This will overwrite your current savedata and will make some areas of 
 ## Special thanks to:
 * [zoogie](https://github.com/zoogie): WRAM Loader code, EUR UNO*pwn port, and assisting me throughout the exploitation
 * [stuckpixel](https://github.com/pixel-stuck): Concept and code of the SDLoader, assisting me throughout the exploitation, assisting me through memory dumping, encouraging me not to quit, and basically teaching me a lot of tricks here or there I put into practice today :D
+* [nocash](https://problemkaputt.de/gba.htm): Providing ideas to make the SDLoader work, creating no$gba which I used for debugging (WHICH HELPED A LOT)
 * [WinterMute](https://github.com/WinterMute): bootloader(minitwlpayload), NDS-HB-Menu, DEVKITPRO, porting UNO*pwn to the DSiWareHax installer(HUGE THANKS FOR THAT :D)
 * [shutterbug2000](https://github.com/shutterbug2000): Assisting me with things related to memory dumps
 * [ihaveamac](https://github.com/ihaveamac): CRC32 Python Scripts
-* [nocash](https://problemkaputt.de/gba.htm): Providing ideas to make the SDLoader work, creating no$gba which I used for debugging (WHICH HELPED A LOT)
 * [Normmatt](https://github.com/Normmatt): Helping me fix the masterbright settings for the initial PoC splash payload
 * [fincs](https://github.com/fincs): Giving me helpful advice about RAM allocating
 * [yellows8](https://github.com/yellows8): His exploits got me interested in doing DSi work.

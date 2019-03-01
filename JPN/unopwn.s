@@ -9,7 +9,7 @@ _start:
 @ Fills the profile name with the value 0x20; counted as the initial string-buffer-overflow for the profile name.
 .fill 0x30, 1, 0x20
 
-.word JUMPADR @ Jumps to a WRAM offset where the payload will run code from RAM 
+.word JUMPADR @ Jumps to our appropriate WRAM offset where the payload will run 
 .space (_start + 0x260) - .
 
 .align 2
@@ -28,7 +28,7 @@ _start:
 .org 0x3C1
 .byte 0x01, 0x01
 
-.space (_start + 0x79C) - .			@ UNO stores 5 profiles in this preticular save; each slot is 0x79C bytes long
+.space (_start + 0x79C) - .			@ Each profile slot is 0x79C bytes long
 .incbin "./assets/profile_slots.bin"	@ profile 2
 .incbin "./assets/profile_slots.bin"	@ profile 3
 .incbin "./assets/profile_slots.bin"	@ profile 4
