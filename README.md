@@ -13,6 +13,7 @@ UNO*pwn is a DSiWare savegame exploit for the game, UNO. The exploit will allow 
 
 ## Installing UNO*pwn:
 __NOTE:__ This will overwrite your current savedata and will make some areas of the game inoperable. Please backup your savedata (if possible) before installing the exploit. Also, WinterMute's DSiWareHax Installer will soon include this exploit along with other new features to come. Stay tune and keep an eye out on this repo as WinterMute's installer will be linked here once he releases.
+* Be sure to download the latest [nds-hbmenu](https://github.com/devkitPro/nds-hb-menu/releases/) and place the `BOOT.NDS` file onto the root of your SD Card.
 
 ### For 3DS - CFW USERS:
 1. Copy the `gm9` folder from the `3DS - CFW USERS` directory onto the root of your SD Card.
