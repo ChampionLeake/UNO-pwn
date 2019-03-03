@@ -12,11 +12,24 @@ UNO*pwn is a DSiWare savegame exploit for the game, UNO. The exploit will allow 
 ###
 
 ## Installing UNO*pwn:
-__NOTE:__ This will overwrite your current savedata and will make some areas of the game inoperable. Please backup your savedata (if possible) before installing the exploit.
-* Download [WinterMute's](https://github.com/WinterMute) updated [DSiWareHax archive]() and place all of the contents onto the root of your SD card.
-* Use an exisiting DSiWare exploit to launch into the nds-hbmenu, and navigate to where the `DSiWareHax.nds` application is stored.
-* If all things went well, the application should install all of the existing DSiWare exploits onto your NAND and should install the UNO*pwn exploit as well.
+__NOTE:__ This will overwrite your current savedata and will make some areas of the game inoperable. Please backup your savedata (if possible) before installing the exploit. Also, WinterMute's DSiWareHax Installer will soon include this exploit along with other new features to come. Stay tune and keep an eye out on this repo.
 
+### For 3DS - CFW USERS:
+1. Copy the `gm9` folder from the `3DS - CFW USERS` directory onto the root of your SD Card.
+2. Assuming that you have Luma3DS and you have the GodMode9 luma payload, hold the `START` button when powering on the console.
+3. Press the home button on your 3DS and navigate to the `Scripts...` option.
+4. Search for the `UNOpwn_injector (YOUR UNO-GAME REGION)` script and select the `Backup Options` and press A to confirm.
+5. Since you have your previous UNO save backed up, navigate to the `Install UNO*pwn` option and proceed with the instructions.
+	- Things should succeed at this point and you should have the exploit installed onto your 3DS.
+
+### For DSi - HiyaCFW USERS:
+* (Please backup your saves first by navigating to `sd:/title/00030004/4B554EXX/data/public.sav`)
+	- `4B554E45 = USA`, `4B554E4A = JPN`, and `4B554E56 = EUR`
+
+1. Copy the `title` folder from the `DSi - HiyaCFW USERS` directory onto the root of your SD Card (Overwrite the files if needed)
+	- Things should succeed at this point and you should have `UNO*pwn` installed onto your DSi.
+###
+###
 ## Triggering the exploit
 1. Select the rainbow settings wheel from the bottom-right of your touch screen
 2. Tap the `PROFILE` menubar 
