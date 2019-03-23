@@ -34,7 +34,7 @@ __NOTE:__ This will overwrite your current savedata and will make some areas of 
 ## Triggering the exploit
 1. Select the rainbow settings wheel from the bottom-right of your touch screen
 2. Tap the `PROFILE` menubar 
-3. Tap the `Edit Profile` menubar
+3. Tap the `Erase Profile` or `Edit Profile` menubar
 4. Watch the magic happen :D
 ###
 ###
