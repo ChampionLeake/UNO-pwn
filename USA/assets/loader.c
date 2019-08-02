@@ -6,10 +6,10 @@ typedef unsigned short u16;
 int main(void) {    
 
 	u8 *payload_dest=(u8*)0x02200000;   
-	u8 *payload_src=(u8*)0x023D07A0; 
+	u8 *payload_src=(u8*)0x023C6E50; 	//	WRAM destination to jump to the generictwlpayload
 	u16 *MASTER_BRIGHT=(u16*) 0x400006C; 
 	u16 *MASTER_BRIGHT2=(u16*)0x400106C; 
-	int size=0x1800;   
+	int size=0x8000;   //	size of the generictwlpayload
 	
 	for(int i=0; i < size; i++){
 		payload_dest[i] = payload_src[i]; 

@@ -1,21 +1,21 @@
 .global _start
 .section .init
 
-#define JUMPADR 0x021E9730
+#define JUMP_ADR 0x021E9730
 
 _start:
-.incbin "./assets/profile_header.bin" @ some type of PROFILE garbage
+.incbin "./assets/profile_header.bin" @ PROFILE garbage
 
-@ Fills the profile name with the value 0x20; counted as the initial string-buffer-overflow for the profile name.
+@ Appends 0x32 bytes of the value "0x20" to the profile name; Using an excessively large username causes the game to crash, stack-smash vuln!
 .fill 0x32, 1, 0x20
 
-.word JUMPADR @ Jumps to our appropriate WRAM offset where the payload will run
+.word JUMP_ADR @ Jumps to our appropriate WRAM address which will execute our payload
 .space (_start + 0x260) - .
 
 .align 2
-.incbin "./assets/loader.bin" @ initial used to jump to a section of WRAM to boot the minitwlpayload from another savefile (UNOMatch.sav). Notes can be found in "zoogie_notes.txt".
+.incbin "./assets/loader.bin" @ initially used to jump to an address for WRAM to execute the generictwlpayload via savefile (UNOMatch.sav).
 
-/* rest of the save is just profile garbage (Holding information like the avatars, records, etc.) */
+/* rest of the save is just profile garbage (Holds data like avatars, records, etc.) */
 .org 0x39C
 .byte 0x01
 
